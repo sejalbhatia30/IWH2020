@@ -1,10 +1,17 @@
 var exec = require('child_process').exec
 
+var resultJson={}
+
+console.log(process.cwd());
+var currentPath = process.cwd();
+
 function reportPython(reportPath) {
+
 
     return new Promise(function (resolve, reject) {
 
-        exec("python /Users/sarthaksadh/Desktop/ey-hack/algo/ocr_surveyor.py " + reportPath, (error, stdout, stderr) => {
+
+        exec("python "+currentPath+"/algo/ocr_surveyor.py" + reportPath, (error, stdout, stderr) => {
             if (error) {
                 console.log(error)
                 reject(error);
@@ -70,6 +77,8 @@ function reportPython(reportPath) {
 
 
 }
+
+
 
 
 module.exports = {
