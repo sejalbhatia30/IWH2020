@@ -81,12 +81,9 @@ app.post("/demo", multipartMiddleware, (req, res) => {
 
   })
 
-  reportPython(reportPath).then((result) => {
-    totalFunctionCount--;
-    console.log("report 2 complete--")
-
-  });
-
+  reportPython(reportPath);
+  totalFunctionCount--;
+  console.log("report 2 complete--")
 
   response();
 
