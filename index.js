@@ -22,7 +22,7 @@ app.use(cors());
 app.use(express.static(__dirname + '/public'));
 app.use(json2xls.middleware);
 
-
+//upad
 global.resultJson = {}
 global.inputJson = {}
 global.compareResult = {
