@@ -20,7 +20,7 @@
     "excel4node": "^1.7.2",
     "express": "^4.17.1",
     "json2xls": "^0.1.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "read-excel-file": "^4.0.1",
     "xls-to-json": "^0.5.2",
     "xlsx": "^0.14.3",
